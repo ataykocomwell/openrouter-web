@@ -1260,7 +1260,9 @@ async function callApi(waitingIndicator) {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${appState.apiKey}`
+                    'Authorization': `Bearer ${appState.apiKey}`,
+                    'HTTP-Referer': 'https://nextstate.vercel.app/', 
+                    'X-Title': 'NextState Demo App', 
                 },
                 body: JSON.stringify(requestPayload),
                 signal: signal
@@ -1398,7 +1400,9 @@ async function callApi(waitingIndicator) {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${appState.apiKey}`
+                    'Authorization': `Bearer ${appState.apiKey}`,
+                    'HTTP-Referer': 'https://nextstate.vercel.app/', 
+                    'X-Title': 'NextState Demo App', 
                 },
                 body: JSON.stringify(requestPayload)
             });
@@ -1691,4 +1695,5 @@ function playSoundSafely(audioElement) {
             console.log('Sound will play on next user interaction');
         }
     });
+
 }
