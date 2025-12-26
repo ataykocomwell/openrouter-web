@@ -1,6 +1,6 @@
-# LLM Chat Application
+# NextState - smart lifestyle design service 
 
-A simple, standalone web-based chat interface for LLMs using the OpenRouter API. Built with vanilla JavaScript, HTML, and CSS.
+A proprietary standalone web-based digital tool and service using LLMs using the OpenRouter API. Built with vanilla JavaScript, HTML, and CSS.
 
 ## Features
 
